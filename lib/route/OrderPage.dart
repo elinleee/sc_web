@@ -28,16 +28,16 @@ class OrderPage extends StatefulWidget {
 class _OrderPageState extends State<OrderPage> {
   Map<String, int> countToValue = <String, int>{};
 
-  Future<Map<String, Object>> menuList = _callAPI();
-  // {
-  //   "HOT 아메리카노": "Hot Americano",
-  //   "ICE 아메리카노": "Ice Americano",
-  //   "HOT 카페라떼": "Hot CafeLatte",
-  //   "ICE 카페라떼": "Ice CafeLatte",
-  //   "HOT 초코라떼": "Hot Chocolate",
-  //   "ICE 초코라떼": "Ice Chocolate",
-  //   "ICE 복숭아티": "복숭아티에 알싸한 홍차를 더한 깔끔한 맛"
-  // };
+  // Future<Map<String, Object>> menuList = _callAPI();
+  Map<String, Object> menuList = {
+    "HOT 아메리카노": "Hot Americano",
+    "ICE 아메리카노": "Ice Americano",
+    "HOT 카페라떼": "Hot CafeLatte",
+    "ICE 카페라떼": "Ice CafeLatte",
+    "HOT 초코라떼": "Hot Chocolate",
+    "ICE 초코라떼": "Ice Chocolate",
+    "ICE 복숭아티": "복숭아티에 알싸한 홍차를 더한 깔끔한 맛"
+  };
 
   @override
   Widget build(BuildContext context) {
