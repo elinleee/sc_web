@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
             //   ),
             // ),
             Center(
-              child: RaisedButton(
+              child: ElevatedButton(
                 child: Text('Order'),
                 onPressed: () {
                   Navigator.pushNamed(context, '/order');
